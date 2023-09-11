@@ -1,0 +1,86 @@
+.footer {
+  background-color: $background_color;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  .footer_logo {
+    p {
+      font-size: 18px;
+      line-height: 30px;
+      color: $pragrap_color;
+      font-weight: 400;
+    }
+  }
+  .footer_link {
+    h1 {
+      color: $hadding_color;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    a {
+      color: $pragrap_color;
+      display: block;
+      line-height: 45px;
+      font-size: 18px;
+      &:hover {
+        color: $main_color;
+      }
+    }
+  }
+  .footer_input {
+    h1 {
+      color: $hadding_color;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    p {
+      color: $pragrap_color;
+      font-size: 18px;
+      line-height: 30px;
+      font-weight: 400 !important;
+    }
+    .input_footer {
+      display: flex;
+      align-items: center;
+      input {
+        border: none;
+        padding: 15px 17px;
+        width: 100%;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+      }
+      button {
+        padding: 15px 17px !important;
+        background: $main_color;
+        color: $white_color;
+        border: none;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+      }
+    }
+    .footer_social {
+      .social {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        background-color: $white_color;
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        svg {
+          filter: grayscale(1);
+          -webkit-filter: grayscale(1);
+        }
+        &:hover svg {
+          filter: grayscale(0);
+          -webkit-filter: grayscale(0);
+        }
+      }
+    }
+  }
+}

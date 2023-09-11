@@ -1,0 +1,74 @@
+#success {
+  @include media-breakpoint-down(xs) {
+    padding-top: 50px;
+  }
+  .success_left {
+    h1 {
+      font-weight: 700;
+      font-size: 48px;
+      color: $dark_color;
+      width: 60%;
+      line-height: auto;
+      @include media-breakpoint-down(xs) {
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+      }
+      span {
+        color: $main_color;
+      }
+    }
+  }
+  .success_right {
+    @include media-breakpoint-down(xs) {
+      margin-top: 30px;
+      text-align: center;
+    }
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      color: $pragrap_color;
+      padding-left: 30px;
+      position: relative;
+      @include media-breakpoint-down(xs) {
+        font-size: 15px;
+        padding-left: 0px;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        background-color: $main_color;
+        width: 2px;
+        height: 100%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        @include media-breakpoint-down(xs) {
+          display: none;
+        }
+      }
+    }
+    button {
+      background-color: $main_color;
+      font-size: 20px;
+      font-weight: 700;
+      color: $white_color;
+      padding: 18px 32px;
+      border: none;
+      border-radius: 8px;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -o-border-radius: 8px;
+      @include media-breakpoint-down(xs) {
+        padding: 10px 20px;
+        font-size: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import "./_variables";
+@import "./_breakpoints";
+@import "./_reset";
+
+@import "../../Componnent/Layout/Navbar/navbar";
+@import "../../Componnent/Layout/Footer/footer";
+@import "../../Componnent/CopyRight/copyright";
+@import "../../Componnent/HeroPart/hero";
+@import "../../Componnent/Sucess/sucess.scss";
+@import "../../Componnent/About/about.scss";
+@import "../../Componnent/Services/service.scss";
+@import "../../Componnent/Experiance/experiance.scss";
+@import "../../Componnent/Blog/blog.scss";
+@import "../../Componnent/Requard/requard.scss";
+@import "../../Componnent/Subscribe/subscribe.scss";

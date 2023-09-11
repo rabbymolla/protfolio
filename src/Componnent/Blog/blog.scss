@@ -1,0 +1,74 @@
+#blog {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  .blog_hedding {
+    margin-bottom: 40px;
+    h1 {
+      font-weight: 700;
+      font-size: 48px;
+      color: $hadding_color;
+      padding-bottom: 24px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 30px;
+      color: $pragrap_color;
+      font-weight: 400;
+      padding: 0 30px;
+    }
+  }
+
+  .blog_box {
+    border-radius: 8px;
+    border: 1px solid $border_color;
+    background: $white_color;
+    padding: 22px;
+    min-height: 432px;
+    margin: 0 14px;
+    @include media-breakpoint-down(xs) {
+      margin: 0 0px;
+    }
+    img {
+      width: 100%;
+    }
+    .blog_date {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      span {
+        color: $pragrap_color;
+        font-size: 16px;
+        font-weight: 400;
+        padding-left: 5px;
+      }
+    }
+    h5 {
+      font-size: 20px;
+      line-height: 26px;
+      color: $hadding_color;
+      font-weight: 700;
+      padding-top: 16px;
+      width: 239px;
+      padding-bottom: 26px;
+    }
+    button {
+      border: none;
+      font-weight: 600;
+      font-size: 16px;
+      color: $hadding_color;
+      background-color: transparent;
+      &:hover {
+        border-bottom: 1px solid $border_color;
+      }
+    }
+  }
+}
+.slick-next:before {
+  content: "→";
+  color: $main_color;
+}
+.slick-prev:before {
+  content: "←";
+  color: $main_color;
+}

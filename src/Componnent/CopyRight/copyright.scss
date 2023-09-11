@@ -1,0 +1,18 @@
+#copy_right {
+  background-color: $main_color;
+  padding: 15px;
+  .copy_right_link {
+    a {
+      font-size: 14px;
+      color: $white_color;
+      font-weight: 400;
+      margin-right: 30px;
+      @include media-breakpoint-down(xs) {
+        margin-right: 10px;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

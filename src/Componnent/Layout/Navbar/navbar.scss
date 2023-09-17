@@ -21,6 +21,48 @@ nav {
     -o-border-radius: 8px;
   }
 }
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100px;
+  width: 350px;
+  height: 100vh;
+  z-index: 999;
+  background-color: $white_color;
+  @include media-breakpoint-down(xs) {
+    width: 100%;
+  }
+  .side_cross {
+    display: flex;
+    justify-content: end;
+  }
+  ul {
+    li {
+      a {
+        color: $dark_color;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 50px;
+        &:hover {
+          color: $main_color;
+        }
+      }
+    }
+  }
+  button {
+    background-color: $main_color !important;
+    border: none !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    padding: 10px 15px !important;
+    color: $white_color;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
+}
 .stickyBar {
   position: fixed !important;
   top: 0;
